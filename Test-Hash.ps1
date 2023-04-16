@@ -1,10 +1,10 @@
 ﻿param (
-    [Parameter(Mandatory=$true)][String]$fileDir,
-    [Parameter(Mandatory=$true)][String]$hash,
-    [String]$algorithm = "SHA256"
+    [Parameter(Mandatory=$true)][String] $fileDir,
+    [Parameter(Mandatory=$true)][String] $hash,
+    [String] $algorithm = "SHA256"
 )
 
-[Bool]$doesMatch = $false
+[Bool] $doesMatch = $false
 
 <# Get the file hashes
     Get-FileHash will return the hash of the specified file using the supplied algorithm.
